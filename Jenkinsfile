@@ -8,37 +8,37 @@ pipeline {
     agent any
     
     stages {
-        stage("Creating war file"){
+        stage("Weclome message"){
             steps{
                 script{
                     checkout scm
                     // sh 'rm -rf *.war'
                     // sh 'jar -cvf survey.war -C swe645/ .'
-                    sh 'echo "Hello"'
+                    sh 'echo "Welcome"'
                 }
             }
         }
-        // stage('Build Docker Image') {
-        //     steps {
-        //         echo 'Building...'
-        //         script {
-        //             dockerImage = docker.build("${registry}:${BUILD_NUMBER}")
-        //         }
-        //     }
-        // }
-        // stage('Deploy Image') {
-        //     steps {
-        //         script {
-        //             docker.withRegistry('', registryCredential) {
-        //                 dockerImage.push()
-        //             }
-        //         }
-        //     }
-        // }
-        // stage('Redeploy') {
-        //     steps {
-        //         sh 'kubectl set image deployment/${deploymentName} container-0=${registry}:${BUILD_NUMBER}'
-        //     }
-        // }
+        stage('Build Docker Image') {
+            steps {
+                echo 'Building...'
+                script {
+                    dockerImage = docker.build("${registry}:${BUILD_NUMBER}")
+                }
+            }
+        }
+        stage('Deploy Image') {
+            steps {
+                script {
+                    docker.withRegistry('', registryCredential) {
+                        dockerImage.push()
+                    }
+                }
+            }
+        }
+        stage('Redeploy') {
+            steps {
+                sh 'kubectl set image deployment/${deploymentName} container-0=${registry}:${BUILD_NUMBER}'
+            }
+        }
     }
 }
