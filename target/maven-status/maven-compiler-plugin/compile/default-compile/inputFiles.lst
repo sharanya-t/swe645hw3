@@ -1,6 +1,6 @@
-/Users/sharanyat/Desktop/645_assignment3/studentsurvey/src/main/java/com/studentsurvey/Entity/Survey.java
-/Users/sharanyat/Desktop/645_assignment3/studentsurvey/src/main/java/com/studentsurvey/StudentsurveyApplication.java
-/Users/sharanyat/Desktop/645_assignment3/studentsurvey/src/main/java/com/studentsurvey/Service/impl/SurveyServiceImpl.java
-/Users/sharanyat/Desktop/645_assignment3/studentsurvey/src/main/java/com/studentsurvey/Repository/SurveyRepository.java
-/Users/sharanyat/Desktop/645_assignment3/studentsurvey/src/main/java/com/studentsurvey/Controller/SurveyController.java
-/Users/sharanyat/Desktop/645_assignment3/studentsurvey/src/main/java/com/studentsurvey/Service/SurveyService.java
+/Users/sharanyat/Desktop/swe645hw3/src/main/java/com/studentsurvey/Service/impl/SurveyServiceImpl.java
+/Users/sharanyat/Desktop/swe645hw3/src/main/java/com/studentsurvey/StudentsurveyApplication.java
+/Users/sharanyat/Desktop/swe645hw3/src/main/java/com/studentsurvey/Repository/SurveyRepository.java
+/Users/sharanyat/Desktop/swe645hw3/src/main/java/com/studentsurvey/Controller/SurveyController.java
+/Users/sharanyat/Desktop/swe645hw3/src/main/java/com/studentsurvey/Entity/Survey.java
+/Users/sharanyat/Desktop/swe645hw3/src/main/java/com/studentsurvey/Service/SurveyService.java
