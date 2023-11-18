@@ -159,14 +159,4 @@ public class Survey {
     @Column(name = "recommendation_likelihood")
     private String recommendationLikelihood;
 
-    @Column(name = "test")
-    private String test;
-
-    public String getTest() {
-        return test;
-    }
-
-    public void setTest(String test) {
-        this.test = test;
-    }
 }
